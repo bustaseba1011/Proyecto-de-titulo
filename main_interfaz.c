@@ -1,6 +1,6 @@
 /*
  * File:   main_lcd.c
- * Author: sebaa
+ * Author: Juan Bustamante Muñoz
  *
  * Created on 9 de abril de 2021, 16:38
  */
