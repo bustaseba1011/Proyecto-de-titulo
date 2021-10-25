@@ -1,10 +1,3 @@
-/*
-Estas librerias fueron escritas por mi, dale like.
-Instagram ➥ http://instagram.com/robertelectronica
-Facebook  ➥ https://www.facebook.com/Robertelectronico/
-Youtube   ➥ https://www.youtube.com/channel/UCYze8bs8C1qF6UbV2r4LrAA/videos?view_as=subscriber
-*/
-
 #ifndef KEYPAD_H
 #define	KEYPAD_H
 #include <xc.h>
