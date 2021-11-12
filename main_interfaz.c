@@ -82,36 +82,12 @@ void main(void) {
                 Lcd_Out(3, 0, "[B]Menu");
                 Lcd_Out(4, 0, "[C]Borrar");
                 if (j == 1){
-                    /*if (dec == 0){
-                        Lcd_Out(4, 0, "[D]OM: Kp x 1");
-                        Lcd_Out(1, 0, "Valor Kp:");
-                    }
-                    else {
-                        Lcd_Out(4, 0, "[D]OM: Kp x 0.01");
-                        Lcd_Out(1, 0, "Valor Kp:");
-                    }*/
                     Lcd_Out(1, 0, "Valor Kp:");
                 }
                 else if (j == 2){
-                    /*if (dec == 0){
-                        Lcd_Out(4, 0, "[D]OM: Ki x 1");
-                        Lcd_Out(1, 0, "Valor Ki:");
-                    }
-                    else {
-                        Lcd_Out(4, 0, "[D]OM: Ki x 0.01");
-                        Lcd_Out(1, 0, "Valor Ki:");
-                    }*/
                     Lcd_Out(1, 0, "Valor Ki:");
                 }
                 else {
-                    /*if (dec == 0){
-                        Lcd_Out(4, 0, "[D]OM: Kd x 1");
-                        Lcd_Out(1, 0, "Valor Kd:");
-                    }
-                    else {
-                        Lcd_Out(4, 0, "[D]OM: Kd x 0.01");
-                        Lcd_Out(1, 0, "Valor Kd:");
-                    }*/
                     Lcd_Out(1, 0, "Valor Kd:");
                 }
                 Lcd_Cmd(LCD_BLINK_CURSOR_ON);
@@ -133,54 +109,19 @@ void main(void) {
                     if (tecla == 66){
                         break;
                     }
-                    /*else if (tecla == 68){
-                        if (dec == 0){
-                            dec = 1;
-                            j = j - 1;
-                            break;
-                        }
-                        else {
-                            dec = 0;
-                            j = j - 1;
-                            break;
-                        }
-                    }*/
                     else if (tecla == 65){
                         if (i == 1){
                             param = 0;
                         }
                         else if (i == 2){
-                            //if (dec == 0){
                             param = uno_k;
-                            /*} 
-                            else {
-                                param = uno_k/100;
-                            }*/
                         }
                         else if (i == 3){
-                            //if (dec == 0){
                             param = uno_k*10 + dos_k;
-                            /*}
-                            else {
-                                param = uno_k/10 + dos_k/100;
-                            }*/
                         }
                         else if (i == 4){
-                            //if (dec == 0){
                             param = uno_k*100 + dos_k*10 + tres_k;
-                            /*}
-                            else {
-                                param = uno_k + dos_k/10 + tres_k/100;
-                            }*/
                         }
-                        /*else {
-                            if (dec == 0){
-                                param = uno_k*1000 + dos_k*100 + tres_k*10 + cuatro_k;
-                            }
-                            else {
-                                param = uno_k*10 + dos_k + tres_k/10 + cuatro_k/100;
-                            }
-                        }*/
                         break;
                     }
                     else if ((tecla == 67) && (i != 1)){
