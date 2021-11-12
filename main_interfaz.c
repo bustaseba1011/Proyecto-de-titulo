@@ -529,7 +529,6 @@ void main(void) {
 }
 
 void __interrupt() timer0(void){
-    //PORTAbits.RA3 = 1;
     int med;
     int ciclo;
     med = adc1_get();
@@ -538,6 +537,6 @@ void __interrupt() timer0(void){
     med = adc2_get();
     ciclo = pid2(med);
     pwm2(ciclo);
-    TMR0 = 0; // TMR0 = 162, cambiar resistencia a 500 ohm (RC)
+    TMR0 = 0; 
     INTCONbits.T0IF = 0;
 }
